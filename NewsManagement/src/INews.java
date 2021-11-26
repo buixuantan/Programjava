@@ -4,7 +4,7 @@ public abstract class INews {
     Day publishDate;
     String author;
     String content;
-    Rate averageRate; // read only property - chưa hiểu.
+    float averageRate; // read only property - chưa hiểu.
 
     public INews() {
     }
@@ -13,7 +13,7 @@ public abstract class INews {
         this.publishDate = publishDate;
     }
 
-    public INews(int id, String title, Day publishDate, String author, String content, Rate averageRate) {
+    public INews(int id, String title, Day publishDate, String author, String content, float averageRate) {
         this.id = id;
         this.title = title;
         this.publishDate = publishDate;
@@ -62,11 +62,11 @@ public abstract class INews {
         this.content = content;
     }
 
-    public Rate getAverageRate() {
+    public float getAverageRate() {
         return averageRate;
     }
 
-    public void setAverageRate(Rate averageRate) {
+    public void setAverageRate(float averageRate) {
         this.averageRate = averageRate;
     }
 
